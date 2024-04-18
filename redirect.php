@@ -1,6 +1,6 @@
 <?php
 function redirectToKeycloakLogin() {
-    $keycloakBaseUrl = 'http://devcloak.passcess.net/realms/master';
+    $keycloakBaseUrl = 'http://devid.smsglobal.net/realms/master';
     $clientId = 'keycloak-php-example';
     $redirectUri = 'http://localhost/example/callback.php';
 

@@ -6,7 +6,7 @@ class CallbackComponent {
     public function __construct() {}
 
     public function handleKeycloakCallback($code) {
-        $keycloakBaseUrl = 'http://devcloak.passcess.net/realms/master';
+        $keycloakBaseUrl = 'http://devid.smsglobal.net/realms/master';
         $clientId = 'keycloak-php-example';
         $clientSecret = 'your-client-secret';
         $redirectUri = 'http://localhost/example/callback.php';

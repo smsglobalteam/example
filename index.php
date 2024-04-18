@@ -2,7 +2,7 @@
 function logoutFromKeycloak() {
     
 
-    $keycloakBaseUrl = 'http://devcloak.passcess.net/realms/master';
+    $keycloakBaseUrl = 'http://devid.smsglobal.net/realms/master';
     $clientId = 'keycloak-php-example';
     $logoutUrl = $keycloakBaseUrl . '/protocol/openid-connect/logout';
 
@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['logout'])) {
         if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_COOKIE['accessToken'])) {
             $accessToken = $_COOKIE['accessToken'];
 
-            $keycloakBaseUrl = 'http://devcloak.passcess.net/realms/master';
+            $keycloakBaseUrl = 'http://devid.smsglobal.net/realms/master';
             $userInfoURL = $keycloakBaseUrl . '/protocol/openid-connect/userinfo';
 
             $headers = [
